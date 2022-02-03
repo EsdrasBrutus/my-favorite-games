@@ -1,7 +1,10 @@
 import React from 'react';
 
 const GamesListing = () => {
-  return <div></div>;
+    return (
+        <div className="games-listing">
+        </div>
+    );
 };
 
 export default GamesListing;
