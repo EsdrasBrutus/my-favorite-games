@@ -1,10 +1,14 @@
 import React from 'react';
+import GamesListing from '../GamesListing/GamesListing';
 
 const Homepage = () => {
   
   
   return (
-    <div> Homepage </div>
+    <div className="homepage">
+      <div className="banner-img"></div>
+      <GamesListing />
+    </div>
   )
 };
 
