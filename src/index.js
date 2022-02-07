@@ -35,7 +35,7 @@ function App() {
       <div className='container'>
         <Routes>
           <Route path="/" element={<Homepage />} />
-          <Route path="/game/:guid" element={<GameDetails />} />
+          <Route path="/game/:id" element={<GameDetails />} />
           <Route path="/*" element={<NotFoundPage />} />
         </Routes>
       </div>
