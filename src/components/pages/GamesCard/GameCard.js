@@ -1,17 +1,17 @@
 import React from 'react';
+import "./GameCard.scss"
 
 const GameCard = (props) => {
-  const {data} = props;
-  console.log(data)
+  const {game} = props;
   return(
     <div className="card-item">
       <div className="card-inner">
         <div className="card-top">
+          <img src={game.background_image} alt="game-img" />
         </div>
         <div className="card-bottom">
-          <div className="card-title">
-            <h3>{data.name}</h3>
-            <p> MovieCard</p>
+          <div className="card-info">
+            <h3>{game.name}</h3>
           </div>
         </div>
       </div>
