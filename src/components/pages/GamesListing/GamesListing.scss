@@ -1,7 +1,7 @@
 @import "../../../styles/colors.scss";
 
 .games-list{
-  margin: 20px 187px;
+  margin: 20px 200px;
   h2 {
     color: $font-secondary;
     margin-bottom: 10px;
@@ -13,4 +13,5 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
   grid-gap: 20px;
+  margin: 0 40px;
 }

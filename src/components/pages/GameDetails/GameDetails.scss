@@ -1,0 +1,26 @@
+@import "../../../styles/colors.scss";
+
+.game-details {
+  h1 {
+    color: $font-primary;
+    margin-bottom: 25rem;
+    font-weight: 4000;
+  }
+}
+
+.game-details-img {
+    margin: 0 !important;
+    width: 100% ;
+    height: 1000px;
+    .game-details-info-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .game-details-info-item {
+            margin: 20px 187px;
+            color: $font-primary;
+            margin-bottom: 10px;         
+        }
+    }
+}
+

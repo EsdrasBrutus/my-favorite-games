@@ -36,6 +36,10 @@ export const gameSlice = createSlice({
         [fetchAsyncGames.rejected]: () => {
             console.log("rejected");
         },
+        [fetchAsyncGameDetails.pending]: (state) => {
+            console.log("Fetched game details");
+            return { ...state, selectedGame: initialState.selectedGame };
+        },
         [fetchAsyncGameDetails.fulfilled]: ( state, {payload}) => {
             console.log("Fetched game details");
             return {...state, selectedGame: payload};
