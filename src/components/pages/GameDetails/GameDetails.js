@@ -31,11 +31,11 @@ const GameDetails = () => {
             </div>
             <div className="game-details-info-item">
               <h3>Platforms</h3>
-              <p>{game.platforms.map(platform => platform.platform.name).join(', ')}</p>
+              <p>{game.platforms ? game.platforms.map(platform => platform.platform.name).join(', ') : "No Games"}</p>
             </div>
             <div className="game-details-info-item">
               <h3>Genres</h3>
-              <p>{game.genres.map(genre => genre.name).join(', ')}</p>
+              <p>{game.genre ? game.genres.map(genre => genre.name).join(', ') : "No Games"}</p>
             </div>
           </div>
         </div>

@@ -3,6 +3,7 @@ import { useSelector } from 'react-redux';
 import { getAllGames } from '../../../state/reducers/gameSlice';
 import GameCard from "../GamesCard/GameCard";
 import "./GamesListing.scss";
+import LoadingComponent from "../../common/LoadingComponent";
 
 
 const GamesListing = () => {
@@ -12,7 +13,7 @@ const GamesListing = () => {
     
     renderGames = games.results ? renderGames = games.results.map((game, index) => (
         <GameCard key={index} game={game} />
-    )) : "No Games";
+    )) : <LoadingComponent />;
     
     return (
         <div className="games-wrapper">

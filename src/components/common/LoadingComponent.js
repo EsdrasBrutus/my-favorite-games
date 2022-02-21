@@ -1,9 +1,9 @@
 import React from 'react';
 
-function LoadingComponent(props) {
-  const { message } = props;
+function LoadingComponent() {
+ 
 
-  return <div>{message}</div>;
+  return <div>Loading...</div>;
 }
 
 export default LoadingComponent;
