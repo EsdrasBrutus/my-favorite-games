@@ -5,6 +5,8 @@ import { fetchAsyncGames } from '../../../state/reducers/gameSlice';
 const Homepage = () => {
   const dispatch = useDispatch();
   const term = '';
+  const[currentPage, setCurrentPage] = useState('');
+  
 
   useEffect(() => {
     dispatch(fetchAsyncGames(term));

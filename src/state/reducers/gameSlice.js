@@ -2,6 +2,8 @@ import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import gameApi from "../../api/gameApi";
 import { key } from "../../api/key";
 
+//Create isLoading state
+
 export const fetchAsyncGames = createAsyncThunk('games/fetchAsyncGames', async (term) => {
     const response = await gameApi.get(`/games?key=${key}&page_size=40&search=${term}`);
     return response.data;
@@ -15,6 +17,7 @@ export const fetchAsyncGameDetails = createAsyncThunk('games/fetchAsyncGameDetai
 const initialState = {
     games: [],
     selectedGame: {},
+    isLoading: false,
 }
 
 export const gameSlice = createSlice({ 
