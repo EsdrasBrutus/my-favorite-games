@@ -1,11 +1,16 @@
 import React, {useState} from 'react';
+import { useDispatch } from 'react-redux';
+import { fetchAsyncGames } from '../../../state/reducers/gameSlice';
 import "./Header.scss";
 
 const Header = () => {
   const [term, setTerm] = useState('');
+  const dispatch = useDispatch();
+
   const submitHandler = (e) => {
     e.preventDefault();
-    console.log(term);
+    dispatch(fetchAsyncGames(term));
+    setTerm('');
   };
 
   return(
@@ -19,14 +24,6 @@ const Header = () => {
           <input type="text" value={term} placeholder="Search for games..." onChange={(e)=> setTerm(e.target.value) }/>
           <button type="submit">Search</button>
         </form>
-      </div>
-      <div className="favorites">
-        <div className="favorites_icon">
-          <img src= "https://www.freepnglogos.com/uploads/heart-png/emoji-heart-33.png" alt="heart"/>
-        </div>
-        <div className="favorites_count">
-          <span>0</span>
-        </div>
       </div>
     </div>
   );

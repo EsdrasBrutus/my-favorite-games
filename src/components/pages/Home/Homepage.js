@@ -4,9 +4,10 @@ import { useDispatch } from 'react-redux';
 import { fetchAsyncGames } from '../../../state/reducers/gameSlice';
 const Homepage = () => {
   const dispatch = useDispatch();
+  const term = '';
 
   useEffect(() => {
-    dispatch(fetchAsyncGames());
+    dispatch(fetchAsyncGames(term));
   },[dispatch]);
   
   return (
