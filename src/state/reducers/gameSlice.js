@@ -21,8 +21,8 @@ export const gameSlice = createSlice({
     name: "games",
     initialState,
     reducers: {
-        addGames: (state, {payload}) => {
-            state.games = payload;
+        removeSelectedGame: (state) => {
+            state.selectedGame = {};
         }
     },
     extraReducers: {
@@ -36,10 +36,6 @@ export const gameSlice = createSlice({
         [fetchAsyncGames.rejected]: () => {
             console.log("rejected");
         },
-        [fetchAsyncGameDetails.pending]: (state) => {
-            console.log("Fetched game details");
-            return { ...state, selectedGame: initialState.selectedGame };
-        },
         [fetchAsyncGameDetails.fulfilled]: ( state, {payload}) => {
             console.log("Fetched game details");
             return {...state, selectedGame: payload};
@@ -47,7 +43,7 @@ export const gameSlice = createSlice({
     },
 });
 
-export const { addGames } = gameSlice.actions;
+export const { removeSelectedGame } = gameSlice.actions;
 export const getAllGames = state => state.games.games;
 export const getSelectedGame = state => state.games.selectedGame;
 export default gameSlice.reducer;
