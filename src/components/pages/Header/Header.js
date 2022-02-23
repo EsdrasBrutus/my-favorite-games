@@ -8,9 +8,10 @@ const Header = () => {
   const [term, setTerm] = useState('');
   const dispatch = useDispatch();
   const navigate = useNavigate();
+  
   const submitHandler = (e) => {
     e.preventDefault();
-    dispatch(fetchAsyncGames(term));
+    dispatch(fetchAsyncGames({term, page: 1}));
     setTerm('');
     navigate('/');
   };
