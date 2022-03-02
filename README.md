@@ -3,7 +3,7 @@
    You can find the deployed project at [Coming soon].
 
 
-### 4️⃣ Key Features
+### Key Features
 
 -    Search through a list of video games 
 
