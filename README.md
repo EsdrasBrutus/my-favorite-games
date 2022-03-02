@@ -20,11 +20,6 @@ Redux-Toolkit
    
    Rawg.io is a video game database, intended for both game consumers and video game professionals alike.
 
-
-# 4️⃣ Installation Instructions
-
-
-
 ## Issue/Bug Request
    
  **If you are having an issue with the existing project code, please submit a bug report under the following guidelines:**
