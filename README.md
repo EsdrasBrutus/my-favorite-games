@@ -6,40 +6,19 @@
 ### 4️⃣ Key Features
 
 -    Search through a list of video games 
--    add games to your favorites list
 
 ## 1️⃣ Tech Stack
 
 ### Front end built using:
-
-#### _Front end framework goes here_
-
-🚫 Why did you choose this framework?
-
--    point one
--    point two
--    point three
--    point four
-
-🚫List the rest of the front end features and libraries in the same format as the framework above.
-
-#### Front end deployed to `🚫insert service here`
-
-#### [Back end](🚫link to back end repo here) built using:
-
-#### 🚫 back end framework goes here
-
--    point one
--    point two
--    point three
-
-🚫 List the rest of the back end end features and libraries in the same format as the framework above
+React.js 
+SASS 
+Redux-Toolkit
 
 # APIs
 
-## 2️⃣  IGDB.com
+## 2️⃣  Rawg.io
    
-   IGDB.com is a video game database, intended for both game consumers and video game professionals alike.
+   Rawg.io is a video game database, intended for both game consumers and video game professionals alike.
 
 
 # 4️⃣ Installation Instructions
